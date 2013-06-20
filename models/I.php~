@@ -1,0 +1,9 @@
+<?php
+class I extends ActiveRecord\Model
+{
+
+public static $table_name="i";	
+public static $primary_key ="invoice_item_id";
+
+}
+?>

@@ -1,0 +1,19 @@
+<?php
+class InvoicePayment extends ActiveRecord\Model
+{
+
+public static $table_name="invoice_payments";
+public static $primary_key = 'payment_id';
+
+static $belongs_to = array(
+        array(
+            'brokers',
+            'foreign_key' => 'customer_id',
+            'primary_key' => 'broker_id',
+            'class_name' => 'Broker'
+        )
+    );   
+ 
+    
+}
+?>
